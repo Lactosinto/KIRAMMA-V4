@@ -227,7 +227,7 @@ export default function App() {
 
     window.addEventListener('paste', handlePaste);
     return () => window.removeEventListener('paste', handlePaste);
-  }, [mode]);
+  }, [mode, personalInputType, auditorInputType]);
 
   const applyRecommendation = (rec: string) => {
     setInput(prev => {
